@@ -16,7 +16,7 @@ async def fetch_urls_json_data(urls):
         list: List of JSON responses obtained from the URLs.
     """
 
-    async with aiohttp.ClientSession() as session:
+    async with aiohttp.ClientSession(trust_env=True) as session:
         tasks = []
         for url in urls:
             tasks.append(session.get(url, ssl=False))
