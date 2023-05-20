@@ -41,6 +41,16 @@ class WatchList(models.Model):
     symbols = models.JSONField(default=list)
 
 
+    def __str__(self):
+        """Method representing the model's string representation.
+
+        Returns:
+            str. String representation of model.
+        """
+
+        return self.user.username + "\'s " + "watchList"
+
+
 @receiver(post_save, sender=User)
 def create_user_watchlist(sender, instance, created, **kwargs):
     """Function to generate WatchList object whenever a user
