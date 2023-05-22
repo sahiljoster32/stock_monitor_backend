@@ -106,6 +106,8 @@ def get_symbols_latest_and_graph_data(symbols, interval='5min'):
         symbol_data_df['6. date_time'] = symbol_data_df.index
         symbol_data_df.reset_index(inplace=True, drop=True)
         symbol_data_df.columns = symbol_data_df.columns.str[3:]
+        symbol_data_df = symbol_data_df[[
+            "open", "close", "low", "high", "volume", "date_time"]]
 
         fetched_symbols.append(symbol_name)
         symbols_latest_prices_dict[symbol_name] = symbol_data_df.iloc[-1]
