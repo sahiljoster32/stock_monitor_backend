@@ -13,6 +13,8 @@
 
 ![Model diagram](./model.png)
 
+All user models have unique watchlist models which stores the user specific watch_list data (or list of symbols). Both user model and watchlist model are in one-to-one relation with each other.
+
 ## All tests are passing ✅
 
 ![Passing tests](./tests_passed.png)
