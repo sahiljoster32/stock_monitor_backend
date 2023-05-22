@@ -13,6 +13,10 @@
 
 ![Model diagram](./model.png)
 
+## All tests are passing ✅
+
+![Passing tests](./tests_passed.png)
+
 ## [Demo link for working backend.](https://drive.google.com/file/d/1q0iEllNef7DDe66Knsf7ebhPFLyj-X1N/view?usp=sharing)
 
 Thanks!
