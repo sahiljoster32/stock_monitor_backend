@@ -1,6 +1,6 @@
 ## This folder contain scripts for users app.
 
-users app basically defines functionally for users, like defining `WatchList` model, defining routes for login and registration, defining serializers for each url route method(or view).
+users app basically defines functionally for users, like defining `WatchList` model, defining routes for `login` and `registration`, defining serializers for each url route method(or view).
 
  - apps.py -> Defines users app's configs.
  - serializers.py -> Defines serializers for users app's views.
